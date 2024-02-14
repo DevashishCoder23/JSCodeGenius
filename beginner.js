@@ -65,3 +65,34 @@
 // }
 
 // console.log(removingDuplicateElem([1, 1, 1, 2, 2, 2, 3, 1, 3, 3, 4, 4, 4]));
+
+// Question 4 Create a function that takes an array of strings and returns the longest string.
+
+// const findLongestString = (arr) => {
+//   let longestStr = arr[0];
+//   for (let i = 1; i < arr.length; i++) {
+//     if (longestStr.length < arr[i].length) longestStr = arr[i];
+//   }
+//   return longestStr;
+// };
+
+// console.log(
+//   findLongestString(["dev", "dshjsd", "haskjkajsassa", "s", "as", ""])
+// );
+
+// Question 5 Implement a function to find the intersection of two arrays.
+
+// const intersectionOfAnArray = (arr1, arr2) => {
+//   let intersectedArr = [];
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr2.includes(arr1[i]) && !intersectedArr.includes(arr2[i])) {
+//       intersectedArr.push(arr1[i]);
+//     }
+//   }
+//   return intersectedArr;
+// };
+
+// console.log(
+//   "Intersection of two array ===>",
+//   intersectionOfAnArray([10, 20, 30, 40, 50], [30, 40, 50, 60, 70])
+// );

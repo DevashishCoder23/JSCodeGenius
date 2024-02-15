@@ -59,3 +59,11 @@
 // console.log(
 //   reverseWordFromSentence("Implement a function to reverse words in a sentence")
 // );
+
+// Question 4> Shuffle an array.
+
+// function ShuffleAnArray(arr){
+//  return arr.sort((a,b) => Math.random() - 0.5);
+// }
+
+// console.log(ShuffleAnArray([12,44,3,32,55,23,55,77]))

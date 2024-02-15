@@ -97,4 +97,21 @@
 //   intersectionOfAnArray([10, 20, 30, 40, 50], [30, 40, 50, 60, 70])
 // );
 
+// Question 6 Swapping two variables without using third variable.
 
+// let a = 20;
+// let b = 30;
+
+// a = a + b;
+// b = a - b;
+// a = a - b;
+
+// console.log(a,b)
+
+// Question 7 Write a function to check if a given year is a leap year.
+
+// function checkLeapyear(year) {
+//   return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+// }
+
+// console.log(checkLeapyear(2021));

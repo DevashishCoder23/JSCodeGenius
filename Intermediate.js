@@ -49,3 +49,13 @@
 // };
 
 // console.log(sum(2)(3)());
+
+// Question 3> Implement a function to reverse words in a sentence.
+
+// function reverseWordFromSentence(para) {
+//   return para.split(" ").reverse().join(" ");
+// }
+
+// console.log(
+//   reverseWordFromSentence("Implement a function to reverse words in a sentence")
+// );

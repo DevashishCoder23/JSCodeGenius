@@ -115,3 +115,70 @@
 // }
 
 // console.log(checkLeapyear(2021));
+
+// Question 8 Write a function to reverse a string.
+
+// function reverseString(str){
+//     return str.split('').reverse().join('');
+// }
+
+// console.log(reverseString('checkingggggg'));
+
+// Question 9 Check whether number is Prime number or not.
+
+// function isPrime(num) {
+//   if (num <= 1) {
+//     return false;
+//   }
+
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(isPrime(4));
+
+// Question 10 Write a function to calculate the factorial of a number.
+
+// function factorialOfNum(num) {
+//   if (num === 0 || num === 1) {
+//     return 1;
+//   }
+//   let result = 1;
+//   for (let i = num; i > 0; i--) {
+//     result *= i;
+//   }
+//   return result;
+// }
+
+// console.log(factorialOfNum(9));
+
+// Question 11 To check wheher a string is palindrome or not.
+
+// function isPalindrome(str) {
+//   let strArr = str.split("");
+
+//   for (let i = 0, j = strArr.length - 1; i <= j; i++) {
+//     if (strArr[i] !== strArr[j]) {
+//       return false;
+//     }
+//     j--
+//   }
+//   return true;
+// }
+
+// console.log(isPalindrome("nammmann"));
+
+// Question 12 Write a function to check if two strings are anagrams of each other.
+
+// function findAnagram(str1, str2) {
+//   return (
+//     str1.toLowerCase().split("").sort().join("") ===
+//     str2.toLowerCase().split("").sort().join("")
+//   );
+// }
+
+// console.log(findAnagram("devashish", "hHissaevd"));

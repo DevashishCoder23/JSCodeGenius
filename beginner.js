@@ -182,3 +182,15 @@
 // }
 
 // console.log(findAnagram("devashish", "hHissaevd"));
+
+// Question 13> Write a JavaScript program to reverse a given string. without built in mehods.
+
+// function reverse(str) {
+//   let reversed = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i];
+//   }
+//   return reversed;
+// }
+
+// console.log(reverse("devashish"));

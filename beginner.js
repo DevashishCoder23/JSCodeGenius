@@ -194,3 +194,57 @@
 // }
 
 // console.log(reverse("devashish"));
+
+// Question 14> Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers.
+
+// function evenArray(arr) {
+//   let resultArr = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//       resultArr.push(arr[i]);
+//     }
+//   }
+//   return resultArr;
+// }
+
+// console.log(evenArray([1, 3, 5, 22, 111, 99, 4, 7, 3, 2]));
+
+// Question 15> Write a JavaScript program to find the largest element in a nested array.
+
+// function flatten(arr) {
+//   let flattened = [];
+//   function flat(arr1) {
+//     for (let i = 0; i < arr1.length; i++) {
+//       if (Array.isArray(arr1[i])) {
+//         flat(arr1[i]);
+//         continue;
+//       }
+//       flattened.push(arr1[i]);
+//     }
+//   }
+
+//   flat(arr);
+
+//   let largestElem = flattened[0];
+//   for (let i = 1; i < flattened.length; i++) {
+//     if (flattened[i] > largestElem) {
+//       largestElem = flattened[i];
+//     }
+//   }
+
+//   return largestElem;
+// }
+
+// console.log(
+//   flatten([
+//     1,
+//     [34, 5, 6, 7, 8, [45], 5, [45]],
+//     2,
+//     3,
+//     [2, [432, 3322, [33, 9, 4, 8888, [34, 5]]]],
+//     4,
+//     5,
+//     6,
+//   ])
+// );

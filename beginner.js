@@ -248,3 +248,14 @@
 //     6,
 //   ])
 // );
+
+// Question 16> Write a JavaScript program to convert a string to title case (capitalize the first letter of each word).
+
+// function convertToTitleCase(str) {
+//   return str
+//     .split(" ")
+//     .map((ele) => ele[0].toUpperCase() + ele.split("").splice(1).join(""))
+//     .join(" ");
+// }
+
+// console.log(convertToTitleCase("Write a JavaScript program to convert a string to title case"));

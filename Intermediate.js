@@ -67,3 +67,26 @@
 // }
 
 // console.log(ShuffleAnArray([12,44,3,32,55,23,55,77]))
+
+// Question 5> Implement a debounce function in JavaScript that limits the frequency of a function’s execution when it’s called repeatedly within a specified time frame.
+function debounce(fn, delay) {
+  let timeOutId;
+
+  return function (...args) {
+    clearTimeout(timeOutId);
+    timeOutId = setTimeout(() => {
+      fn.apply(this, args);
+    }, delay);
+  };
+}
+
+const func = (...args) => {
+  console.log("lets check debouncingggggg ", args);
+};
+
+const finalFn = debounce(func, 1000);
+finalFn();
+finalFn();
+finalFn(1, 2, 3, 4, 5);
+finalFn(4, 3, 23, 5);
+finalFn(2, 9, 5, 43, 4, 2);

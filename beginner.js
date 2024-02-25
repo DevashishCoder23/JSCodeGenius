@@ -312,3 +312,24 @@
 // }
 
 // console.log(reverseString("Devashish Sharma is good boy"));
+
+// Question 20> How to compare two arrays are equal or not.
+
+// function isArrayEqual(arr1,arr2){
+//     if(arr1.length !== arr2.length){
+//         return false
+//     }
+
+//     let sortedArr1 = arr1.sort((a,b) => a-b);
+//     let sortedArr2 = arr2.sort((a,b) => a-b);
+
+//     for(let i=0; i< sortedArr1.length; i++){
+//         if(sortedArr1[i] !== sortedArr2[i]){
+//             return false
+//         }
+//     }
+//     return true;
+// }
+
+// console.log(isArrayEqual([5,1,2,3,4,5,4],[5,4,5,4,3,2,1]))
+

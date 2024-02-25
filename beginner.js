@@ -259,3 +259,25 @@
 // }
 
 // console.log(convertToTitleCase("Write a JavaScript program to convert a string to title case"));
+
+// Question 17> Find even and odd in a given array.
+
+// function findEvenAndOdd(arr) {
+//   let even = [];
+//   let odd = [];
+
+//   arr.forEach((elem) => {
+//     if (elem % 2 === 0) {
+//       even.push(elem);
+//     } else {
+//       odd.push(elem);
+//     }
+//   });
+
+//   return {
+//     even,
+//     odd,
+//   };
+// }
+
+// console.log(findEvenAndOdd([-123, 33333, 4, 5, 6, 4, 33, -4, 55, 33, 3332, 3, 4]))

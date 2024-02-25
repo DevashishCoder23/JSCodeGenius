@@ -281,3 +281,21 @@
 // }
 
 // console.log(findEvenAndOdd([-123, 33333, 4, 5, 6, 4, 33, -4, 55, 33, 3332, 3, 4]))
+
+// Question 18> Find Vowels in given string.
+
+function FindVowels(str){
+    let vowels = [];
+    const strInLowerCase = str.toLowerCase();
+
+    for(let char in strInLowerCase){
+        if(str[char] === 'a' || str[char] === 'e' || str[char] === 'i' || str[char] === 'o' || str[char] === 'u'){
+            if(!vowels.includes(str[char])){
+                vowels.push(str[char])
+            }
+        }
+    }
+    return vowels;
+}
+
+console.log(FindVowels("DevasOOOohish Sharma"))

@@ -136,3 +136,26 @@
 // }
 
 // console.log(findDuplicateElements([1, 3, 4, 5, 6, 4, 33, 4, 55, 33, 2, 3, 4]));
+
+// Question 8 How to find min and max value in an array.
+
+// function findMinMaxValue(arr) {
+//   let min = arr[0];
+//   let max = arr[0];
+
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < min) {
+//       min = arr[i];
+//     }
+
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   return {
+//     min,
+//     max,
+//   };
+// }
+
+// console.log(findMinMaxValue([-123, 33333, 4, 5, 6, 4, 33, -4, 55, 33, 3332, 3, 4]));

@@ -137,7 +137,7 @@
 
 // console.log(findDuplicateElements([1, 3, 4, 5, 6, 4, 33, 4, 55, 33, 2, 3, 4]));
 
-// Question 8 How to find min and max value in an array.
+// Question 8> How to find min and max value in an array.
 
 // function findMinMaxValue(arr) {
 //   let min = arr[0];
@@ -160,7 +160,7 @@
 
 // console.log(findMinMaxValue([-123, 33333, 4, 5, 6, 4, 33, -4, 55, 33, 3332, 3, 4]));
 
-// Question 9 how to find second largest value and remove largest value from an array.
+// Question 9> how to find second largest value and remove largest value from an array.
 
 // function findSecondLargestAndRemoveLargest(arr) {
 //   let sortedArr = arr.sort((a, b) => a - b);
@@ -176,3 +176,19 @@
 //     -123, 33333, 4, 5, 6, 4, 33, -4, 55, 33, 3332, 3, 4,
 //   ])
 // );
+
+// Question 10> How to find missing number in a given integer array of 1 to 10.
+
+// function findMissingInteger(arr) {
+//   let sortedArr = arr.sort((a, b) => a - b);
+//   let missingInt = [];
+
+//   for (let i = 1; i <= 10; i++) {
+//     if (!sortedArr.find((ele) => ele === i)) {
+//       missingInt.push(i);
+//     }
+//   }
+//   return missingInt;
+// }
+
+// console.log(findMissingInteger([1, 2, 4, 6, 7, 8, 9]));

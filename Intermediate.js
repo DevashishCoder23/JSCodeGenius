@@ -159,3 +159,20 @@
 // }
 
 // console.log(findMinMaxValue([-123, 33333, 4, 5, 6, 4, 33, -4, 55, 33, 3332, 3, 4]));
+
+// Question 9 how to find second largest value and remove largest value from an array.
+
+// function findSecondLargestAndRemoveLargest(arr) {
+//   let sortedArr = arr.sort((a, b) => a - b);
+//   console.log("lets check sorted Array ==>", sortedArr, sortedArr.slice(0, -1));
+//   return {
+//     secondlargest: sortedArr.slice(0, -1).pop(),
+//     newArr: sortedArr.slice(0, -1),
+//   };
+// }
+
+// console.log(
+//   findSecondLargestAndRemoveLargest([
+//     -123, 33333, 4, 5, 6, 4, 33, -4, 55, 33, 3332, 3, 4,
+//   ])
+// );

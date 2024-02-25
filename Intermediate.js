@@ -118,3 +118,21 @@
 // }
 
 // console.log(thirdNonRepeatingChar("Devashriidsh Sharma"));
+
+// Question 7> How to find duplicate elements n an array.
+
+// function findDuplicateElements(arr) {
+//   let duplicateElem = [];
+//   let arrWithoutDuplicate = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (!arrWithoutDuplicate.includes(arr[i])) {
+//       arrWithoutDuplicate.push(arr[i]);
+//     } else {
+//       duplicateElem.push(arr[i]);
+//     }
+//   }
+//   return duplicateElem;
+// }
+
+// console.log(findDuplicateElements([1, 3, 4, 5, 6, 4, 33, 4, 55, 33, 2, 3, 4]));

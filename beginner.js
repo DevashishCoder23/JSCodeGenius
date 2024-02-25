@@ -284,18 +284,31 @@
 
 // Question 18> Find Vowels in given string.
 
-function FindVowels(str){
-    let vowels = [];
-    const strInLowerCase = str.toLowerCase();
+// function FindVowels(str){
+//     let vowels = [];
+//     const strInLowerCase = str.toLowerCase();
 
-    for(let char in strInLowerCase){
-        if(str[char] === 'a' || str[char] === 'e' || str[char] === 'i' || str[char] === 'o' || str[char] === 'u'){
-            if(!vowels.includes(str[char])){
-                vowels.push(str[char])
-            }
-        }
-    }
-    return vowels;
-}
+//     for(let char in strInLowerCase){
+//         if(str[char] === 'a' || str[char] === 'e' || str[char] === 'i' || str[char] === 'o' || str[char] === 'u'){
+//             if(!vowels.includes(str[char])){
+//                 vowels.push(str[char])
+//             }
+//         }
+//     }
+//     return vowels;
+// }
 
-console.log(FindVowels("DevasOOOohish Sharma"))
+// console.log(FindVowels("DevasOOOohish Sharma"))
+
+// Question 19> To reverse a string without using builtin methods.
+
+// function reverseString(str) {
+//   let reversedString = "";
+
+//   for(let i = str.length -1; i >= 0; i--){
+//     reversedString += str[i]
+//   }
+//   return reversedString
+// }
+
+// console.log(reverseString("Devashish Sharma is good boy"));

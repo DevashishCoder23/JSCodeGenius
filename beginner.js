@@ -331,5 +331,43 @@
 //     return true;
 // }
 
-// console.log(isArrayEqual([5,1,2,3,4,5,4],[5,4,5,4,3,2,1]))
+// console.log(isArrayEqual([5,1,2,3,4,5,4],[5,4,5,4,3,2,1]));
 
+// Question 21> Write a program to find union of two array.
+
+// function unionOfArray(arr1, arr2) {
+//   let unionArray = [];
+
+//   let maxLength = arr1.length > arr2.length ? arr1.length : arr2.length;
+
+//   for (let i = 0; i < maxLength; i++) {
+//     if (!unionArray.includes(arr1[i]) && typeof arr1[i] === "number") {
+//       unionArray.push(arr1[i]);
+//     }
+//     if (!unionArray.includes(arr2[i]) && typeof arr2[i] === "number") {
+//       unionArray.push(arr2[i]);
+//     }
+//   }
+//   return unionArray;
+// }
+
+// console.log(unionOfArray([1,2,3,4,4,5,6,7], [2,3,9,5,4,3,22]));
+
+// Question 22> Check Armstrong Number.
+
+// function checkArmstrong(num) {
+//   let temp = num;
+//   let sum = 0;
+//   let rem;
+//   while (temp > 0) {
+//     rem = temp % 10;
+//     sum += rem * rem * rem;
+//     temp = parseInt(temp / 10);
+//   }
+//   return sum === num;
+// }
+
+// console.log(
+//   "lets check whether a number is armstrong or not ==>",
+//   checkArmstrong(153)
+// );

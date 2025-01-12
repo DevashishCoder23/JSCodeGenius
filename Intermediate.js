@@ -192,3 +192,31 @@
 // }
 
 // console.log(findMissingInteger([1, 2, 4, 6, 7, 8, 9]));
+
+
+
+
+
+
+
+//  *************************************** Data Structure And Algorithm ***************************************************  // 
+
+// Question 11> Write a function to reverse a string with outusing built in Method.
+
+// O(n) Linear Time solution
+// const reverseString = (inputStr) => {
+
+//     if(!inputStr || inputStr.length < 2 || typeof inputStr !== "string"){
+//         return false;
+//     }
+
+//     let reverseStr = "";
+//     for(let i = 0; i < inputStr.length; i++){
+//         reverseStr = reverseStr + inputStr[inputStr.length - (i +1)];
+//     }
+//     return reverseStr;
+// }
+
+// console.log("LETS CHECK RESULT =========>",reverseString("My name is Devashish Sharma"));
+
+

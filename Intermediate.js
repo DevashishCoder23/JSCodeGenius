@@ -219,4 +219,38 @@
 
 // console.log("LETS CHECK RESULT =========>",reverseString("My name is Devashish Sharma"));
 
+ 
+// Question 12> Write a function to merge two sorted array.
+
+// const mergeSortedArr = (array1,array2) => {
+//     if(!array1 || array1.length === 0){
+//         return array2;
+//     }
+    
+//     if(!array2  || array2.length === 0){
+//         return array1;
+//     }
+    
+//     const mergedSortedArr = [];
+    
+//     let firstArrayItem = array1[0];
+//     let secondArrayItem = array2[0];
+//     let i = 1;
+//     let j = 1;
+    
+//     while(firstArrayItem || secondArrayItem){
+//         if(!secondArrayItem || (firstArrayItem < secondArrayItem)){
+//             mergedSortedArr.push(firstArrayItem);
+//             firstArrayItem = array1[i];
+//             i++;
+//         }else{
+//             mergedSortedArr.push(secondArrayItem);
+//             secondArrayItem = array2[j];
+//             j++;
+//         }
+//     }
+//     return mergedSortedArr;
+//  }
+ 
+//  console.log("RESULT ===>>",mergeSortedArr([0,3,4,31],[4,6,30]));
 

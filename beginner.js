@@ -371,3 +371,24 @@
 //   "lets check whether a number is armstrong or not ==>",
 //   checkArmstrong(153)
 // );
+
+
+// Question 23: Write a function for firstRecurringCharacter.
+
+// function firstRecurringCharacter(array) {
+//     if(array.length === 0){
+//         return undefined;
+//     }
+//     let obj = {};
+    
+//     for(let i=0; i < array.length; i++){
+//         if(obj.hasOwnProperty(array[i])){
+//             return array[i];
+//         }else{
+//             obj[array[i]] = true;
+//         }
+//     }
+//     return undefined;
+// };
+
+// console.log("LETS CHECK ===>",firstRecurringCharacter([1,2,3,4,2,4]));

@@ -520,3 +520,30 @@
 // };
 // console.log("RESULT ==>",fibonacciSeriesItratevily(4));
 
+// function reverseStr(str){
+//     let strArr = str.split("");
+//     const newArr = [];
+//     // here we are using closure!
+//     function reverseArr(arr){
+//         if(arr.length > 0){
+//           newArr.push(arr.pop())
+//           reverseArr(arr);
+//         }
+//         return;
+//     };
+    
+//     reverseArr(strArr);
+//     return newArr.join("");
+// };
+
+// console.log("RESULT ==>",reverseStr("Devashish sharma"));
+
+// function reverseStrRecursively(str){
+//     if(str === ""){
+//         return "";
+//     }
+    
+//     return reverseStrRecursively(str.substr(1)) + str.charAt(0);
+// };
+
+// console.log("RESULT ==>",reverseStrRecursively("Akshay Thakur"));

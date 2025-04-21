@@ -393,169 +393,169 @@
 
 // console.log("LETS CHECK ===>",firstRecurringCharacter([1,2,3,4,2,4]));
 
-10 > 20 > 30
-class LinkedList {
-    constructor(){
-        this.head = {
-            value: 10,
-            next: null
-        };
-        this.tail = this.head;
-        this.length = 1;
-    }
+// 10 > 20 > 30
+// class LinkedList {
+//     constructor(){
+//         this.head = {
+//             value: 10,
+//             next: null
+//         };
+//         this.tail = this.head;
+//         this.length = 1;
+//     }
      
-    append(value){
-        const nextValue = {
-            value: value,
-            next: null
-        }
-        this.tail.next = nextValue;
-        this.tail = this.tail.next;
-        this.length = this.length + 1
-    }
+//     append(value){
+//         const nextValue = {
+//             value: value,
+//             next: null
+//         }
+//         this.tail.next = nextValue;
+//         this.tail = this.tail.next;
+//         this.length = this.length + 1
+//     }
     
-    prepend(value){
-        let firstNode = {
-            value: value,
-            next: this.head
-        }
+//     prepend(value){
+//         let firstNode = {
+//             value: value,
+//             next: this.head
+//         }
         
-        this.head = firstNode;
-        this.length++;
-    }
+//         this.head = firstNode;
+//         this.length++;
+//     }
 
-    printList(){
-        let list = [];
-        let headNode = this.head;
-        while(headNode !== null){
-            list.push(headNode.value);
-            headNode = headNode.next;
-        }
-        console.log("List items ==>",list);
-    }
+//     printList(){
+//         let list = [];
+//         let headNode = this.head;
+//         while(headNode !== null){
+//             list.push(headNode.value);
+//             headNode = headNode.next;
+//         }
+//         console.log("List items ==>",list);
+//     }
     
-    displayListStructure(){
-        console.log("THIS IS YOUR FIRST LINKED LIST ==>",this.head)
-    }
+//     displayListStructure(){
+//         console.log("THIS IS YOUR FIRST LINKED LIST ==>",this.head)
+//     }
 
-    insert(index,value){
-        let newNode = {
-            value: value,
-            next: null
-        }
+//     insert(index,value){
+//         let newNode = {
+//             value: value,
+//             next: null
+//         }
 
-        let currentPointer = this.head.next;
-        let currentNode = this.head;
-        let i = 0;
+//         let currentPointer = this.head.next;
+//         let currentNode = this.head;
+//         let i = 0;
 
-        if(index === 0){
-            newNode.next = currentNode;
-            this.head = newNode;
-            this.length++;
-        }else{
-            while(i < index){
+//         if(index === 0){
+//             newNode.next = currentNode;
+//             this.head = newNode;
+//             this.length++;
+//         }else{
+//             while(i < index){
                 
-                if(i === index - 1){
-                    newNode.next = currentPointer
-                    currentNode.next = newNode;
-                    this.length++;
-                }
-                currentNode = currentPointer;
-                currentPointer = currentNode.next;
-                i++;
-            }
-        }
+//                 if(i === index - 1){
+//                     newNode.next = currentPointer
+//                     currentNode.next = newNode;
+//                     this.length++;
+//                 }
+//                 currentNode = currentPointer;
+//                 currentPointer = currentNode.next;
+//                 i++;
+//             }
+//         }
         
-    }
+//     }
 
-    remove(index){
+//     remove(index){
 
-        let currentNode = this.head;
-        let currentPointer = currentNode.next;
-        if(index ===0){
-            this.head = currentPointer;
-            this.length--;
-        }else if(index >= this.length){
-            console.log("Index does not exist");
-        }else{
-            let i = 0;
-            while(i < this.length){
-                if(i === index-1){
-                    if(currentPointer?.next){
-                        currentNode.next = currentPointer.next;
-                    }else{
-                        console.log("currentPointer?.next ==>",currentPointer?.next,index,i,currentNode,this.length)
-                        currentNode.next = null;
-                    }
-                    this.length--;
-                    i++;
-                }else {
+//         let currentNode = this.head;
+//         let currentPointer = currentNode.next;
+//         if(index ===0){
+//             this.head = currentPointer;
+//             this.length--;
+//         }else if(index >= this.length){
+//             console.log("Index does not exist");
+//         }else{
+//             let i = 0;
+//             while(i < this.length){
+//                 if(i === index-1){
+//                     if(currentPointer?.next){
+//                         currentNode.next = currentPointer.next;
+//                     }else{
+//                         console.log("currentPointer?.next ==>",currentPointer?.next,index,i,currentNode,this.length)
+//                         currentNode.next = null;
+//                     }
+//                     this.length--;
+//                     i++;
+//                 }else {
 
-                    currentNode = currentPointer;
-                    currentPointer = currentNode.next;
-                    i++;
-                }
-            }
-        }
-    }
-}
+//                     currentNode = currentPointer;
+//                     currentPointer = currentNode.next;
+//                     i++;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-const list = new LinkedList();
-list.prepend(2);
-list.append(20);
-list.append(30);
-list.prepend(5);
-list.append(40);
-list.prepend(3);
-list.insert(3,99);
+// const list = new LinkedList();
+// list.prepend(2);
+// list.append(20);
+// list.append(30);
+// list.prepend(5);
+// list.append(40);
+// list.prepend(3);
+// list.insert(3,99);
 
-list.remove(0)
-list.printList();
+// list.remove(0)
+// list.printList();
 
 // list.displayListStructure();
 
-console.log("Length of linked list is ==>",list.length)
+// console.log("Length of linked list is ==>",list.length)
 
 // Online Javascript Editor for free
 // Write, Edit and Run your Javascript code using JS Online Compiler
 
 // 10 20  30  40  50
 
-class DoubleLinkedList{
-    constructor(value){
-        this.head = {
-            value: value,
-            next: null,
-            prev: null 
-        };
-        this.tail = this.head;
-        this.length = 1;
-    }
+// class DoubleLinkedList{
+//     constructor(value){
+//         this.head = {
+//             value: value,
+//             next: null,
+//             prev: null 
+//         };
+//         this.tail = this.head;
+//         this.length = 1;
+//     }
     
-    append(value){
-        let newNode = {
-            value: value,
-            next: null,
-            prev: (this.tail.prev === null) ? this.head : this.tail
-        }
+//     append(value){
+//         let newNode = {
+//             value: value,
+//             next: null,
+//             prev: (this.tail.prev === null) ? this.head : this.tail
+//         }
         
-        this.tail.next = newNode;
-        this.tail = newNode;
-        this.length++;
-    }
+//         this.tail.next = newNode;
+//         this.tail = newNode;
+//         this.length++;
+//     }
     
-    printList(){
-        console.log("YOUR FIRST DOUBLE LINKED LIST IS =>",this.head);
-    }
+//     printList(){
+//         console.log("YOUR FIRST DOUBLE LINKED LIST IS =>",this.head);
+//     }
     
-};
+// };
 
-const doubleLinkedList = new DoubleLinkedList(10);
-doubleLinkedList.append(20);
-doubleLinkedList.append(30);
-doubleLinkedList.append(40);
-doubleLinkedList.append(50);
-doubleLinkedList.printList();
+// const doubleLinkedList = new DoubleLinkedList(10);
+// doubleLinkedList.append(20);
+// doubleLinkedList.append(30);
+// doubleLinkedList.append(40);
+// doubleLinkedList.append(50);
+// doubleLinkedList.printList();
 
 
 
@@ -568,184 +568,211 @@ doubleLinkedList.printList();
     
     // Stack implementation using Linked List.
     
-    class Stack{
-        constructor(){
-            this.top = null;
-            this.bottom = null;
-            this.length = 0;
-        }
+    // class Stack{
+    //     constructor(){
+    //         this.top = null;
+    //         this.bottom = null;
+    //         this.length = 0;
+    //     }
         
-        push(value){
-            const node  = {
-                value: value,
-                next: null
-            }
-            if(this.bottom){
-                this.top = node;
-                this.top.next = this.bottom;
-                this.bottom = this.top;
-            }else{
-                this.bottom = node;
-                this.top = this.bottom;
-            }
-            this.length++;
-        }
+    //     push(value){
+    //         const node  = {
+    //             value: value,
+    //             next: null
+    //         }
+    //         if(this.bottom){
+    //             this.top = node;
+    //             this.top.next = this.bottom;
+    //             this.bottom = this.top;
+    //         }else{
+    //             this.bottom = node;
+    //             this.top = this.bottom;
+    //         }
+    //         this.length++;
+    //     }
         
-        pop(){
-            if(this.length){
-                if(this.length === 1){
-                this.top.value = null;  
-                }else{
-                this.top = this.top.next;
-                this.bottom = this.top;
-                }
-                this.length--;
-            }else{
-              console.log("Nothing to remove stack is already empty.")
-            }
-        }
+    //     pop(){
+    //         if(this.length){
+    //             if(this.length === 1){
+    //             this.top.value = null;  
+    //             }else{
+    //             this.top = this.top.next;
+    //             this.bottom = this.top;
+    //             }
+    //             this.length--;
+    //         }else{
+    //           console.log("Nothing to remove stack is already empty.")
+    //         }
+    //     }
         
-        peak(){
-            console.log("RESULT =====>",this.top.value);
-        }
-        isEmpty(){
-         console.log("CHECK THAT STACK IS EMPTY OR NOT ==>",this.top.value === null)    
-        }
+    //     peak(){
+    //         console.log("RESULT =====>",this.top.value);
+    //     }
+    //     isEmpty(){
+    //      console.log("CHECK THAT STACK IS EMPTY OR NOT ==>",this.top.value === null)    
+    //     }
         
-        printResult(){
-            let result = []
-            let value = this.top.value;
-            let refToTop = this.top;
-            while(value){
-                result.push(value);
-                refToTop = refToTop?.next;
-                value = refToTop?.value; 
-                console.log("INSIDE LOOP ==>",result,refToTop,value)
-            }
-            console.log("This is my first Stack implementation using reversed linked list ==>",this.top,this.length,result);
-        }
-    }
+    //     printResult(){
+    //         let result = []
+    //         let value = this.top.value;
+    //         let refToTop = this.top;
+    //         while(value){
+    //             result.push(value);
+    //             refToTop = refToTop?.next;
+    //             value = refToTop?.value; 
+    //             console.log("INSIDE LOOP ==>",result,refToTop,value)
+    //         }
+    //         console.log("This is my first Stack implementation using reversed linked list ==>",this.top,this.length,result);
+    //     }
+    // }
     
-    const firstStack = new Stack();
-    firstStack.push(10);
-    firstStack.push(20);
-    firstStack.push(30);
+    // const firstStack = new Stack();
+    // firstStack.push(10);
+    // firstStack.push(20);
+    // firstStack.push(30);
     // firstStack.printResult();
-    firstStack.pop();
-    firstStack.pop();
     // firstStack.pop();
     // firstStack.pop();
-    firstStack.isEmpty();
+    // firstStack.pop();
+    // firstStack.pop();
+    // firstStack.isEmpty();
     // firstStack.peak()
-    firstStack.printResult();
+    // firstStack.printResult();
 
 
 
     // Binary Tree
 
-    class NewNode{
-        constructor(value){
-            this.value = value;
-            this.left = null;
-            this.right = null;
-        }
-    }
+    // class NewNode{
+    //     constructor(value){
+    //         this.value = value;
+    //         this.left = null;
+    //         this.right = null;
+    //     }
+    // }
     
-    class BinarySearchTree{
-        constructor(){
-            this.root = null;
-        }
+    // class BinarySearchTree{
+    //     constructor(){
+    //         this.root = null;
+    //     }
         
-        shiftTo(currentNodeValue, newNodeValue){
-            if(currentNodeValue < newNodeValue){
-                return "right";
-            }else{
-                return "left";
-            }
-        }
-        //     9
-        //  4     20
-        //1  6  15  170
+    //     shiftTo(currentNodeValue, newNodeValue){
+    //         if(currentNodeValue < newNodeValue){
+    //             return "right";
+    //         }else{
+    //             return "left";
+    //         }
+    //     }
+    //     //     9
+    //     //  4     20
+    //     //1  6  15  170
         
-        lookup(value){
-            if(this.root){
-                let currentNode = this.root;
-                while(currentNode){
-                    if(currentNode.value === value){
-                        return currentNode;
-                    }
-                  const shiftToward = this.shiftTo(currentNode.value,value);
-                  const isNodeExist = currentNode[shiftToward];
-                  if(isNodeExist){
-                      if(isNodeExist.value === value){
-                          return isNodeExist;
-                      }else{
-                         currentNode = isNodeExist;   
-                      }
-                  }else{
-                     return false
-                  }
-                }
+    //     lookup(value){
+    //         if(this.root){
+    //             let currentNode = this.root;
+    //             while(currentNode){
+    //                 if(currentNode.value === value){
+    //                     return currentNode;
+    //                 }
+    //               const shiftToward = this.shiftTo(currentNode.value,value);
+    //               const isNodeExist = currentNode[shiftToward];
+    //               if(isNodeExist){
+    //                   if(isNodeExist.value === value){
+    //                       return isNodeExist;
+    //                   }else{
+    //                      currentNode = isNodeExist;   
+    //                   }
+    //               }else{
+    //                  return false
+    //               }
+    //             }
                 
-            }else{
-                if(this.root.value === value){
-                    return this.root
-                }else{
-                    return false;
-                }
-            }
-        }
+    //         }else{
+    //             if(this.root.value === value){
+    //                 return this.root
+    //             }else{
+    //                 return false;
+    //             }
+    //         }
+    //     }
         
-        // left and right node comparision then update node
-        insert(value){
-            let newNode = new NewNode(value);
-            if(this.root){
-              let currentNode = this.root;
-              let isNodeUpdate = false;
+    //     // left and right node comparision then update node
+    //     insert(value){
+    //         let newNode = new NewNode(value);
+    //         if(this.root){
+    //           let currentNode = this.root;
+    //           let isNodeUpdate = false;
               
-              while(!isNodeUpdate){
-                  const shiftToward = this.shiftTo(currentNode.value,newNode.value);
-                  const isNodeExist = currentNode[shiftToward];
-                  if(isNodeExist){
-                      currentNode = isNodeExist;
-                  }else{
-                     currentNode[shiftToward] = newNode;
-                     isNodeUpdate = true;
-                  }
-              }
-            }else{
-                this.root = newNode;
-            }
+    //           while(!isNodeUpdate){
+    //               const shiftToward = this.shiftTo(currentNode.value,newNode.value);
+    //               const isNodeExist = currentNode[shiftToward];
+    //               if(isNodeExist){
+    //                   currentNode = isNodeExist;
+    //               }else{
+    //                  currentNode[shiftToward] = newNode;
+    //                  isNodeUpdate = true;
+    //               }
+    //           }
+    //         }else{
+    //             this.root = newNode;
+    //         }
             
-        }
-    }
+    //     }
+    // }
     
     
     
-    const tree = new BinarySearchTree();
-    tree.insert(9);
-    tree.insert(4);
-    tree.insert(6);
-    tree.insert(20);
-    tree.insert(170);
-    tree.insert(15);
-    tree.insert(1);
-    tree.insert(166);
-    tree.insert(160);
-    tree.insert(163);
+    // const tree = new BinarySearchTree();
+    // tree.insert(9);
+    // tree.insert(4);
+    // tree.insert(6);
+    // tree.insert(20);
+    // tree.insert(170);
+    // tree.insert(15);
+    // tree.insert(1);
+    // tree.insert(166);
+    // tree.insert(160);
+    // tree.insert(163);
     
     // tree.remove(170);
-    console.log(traverse(tree.root));
-    console.log(tree.lookup(166));
+    // console.log(traverse(tree.root));
+    // console.log(tree.lookup(166));
     //     9
     //  4     20
     //1  6  15  170
     
-    function traverse(node) {
-      const tree = { value: node.value };
-      tree.left = node.left === null ? null : traverse(node.left);
-      tree.right = node.right === null ? null : traverse(node.right);
-      return tree;
-    }
+    // function traverse(node) {
+    //   const tree = { value: node.value };
+    //   tree.left = node.left === null ? null : traverse(node.left);
+    //   tree.right = node.right === null ? null : traverse(node.right);
+    //   return tree;
+    // }
 
 
+// * !important: You can also try to implement Bubble and Selection sort, because of its simple implementation not implemented here.    
+
+// *     Implementation of insertion sort algorithm.
+
+// function insertionSort(array){
+//     const length = array.length;
+    
+//     for(let i=0; i< length; i++){
+//         if(array[i] > array[i+1]){
+//             //swap logic
+//             let temp = array[i+1];
+//             for(let j = i+1; j > 0; j--){
+//                 if(array[j] > array[j-1]){
+//                     break;
+//                 }else{
+//                     array[j] = array[j-1];
+//                     array[j-1] = temp;
+//                     temp = array[j-1];
+//                 }
+//             }
+//         }
+//         console.log("INSIDE THE LOOP ==>",array,i,length);
+//     }
+//     return array;
+// };
+
+// console.log("OUTSIDE THE LOOP RESULT ===>",insertionSort([3,9,4,8,2,5,6,7,1]));
